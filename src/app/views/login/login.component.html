@@ -1,0 +1,69 @@
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4 ">
+      <br>
+        <div class="row">
+            <div class="col-sm-12">
+                    <mat-card class="login-card">
+                        
+                            <h1> 
+                              <h2> <i class="icon-lock login"></i></h2>
+                              
+                            </h1>
+                            <br>
+                                <h3 >Login</h3>
+                                <mat-card-content>
+                                        <div class="row">
+                                            <div class="col-sm-1"></div>
+                                            <div class="col-sm-10">
+                                                    <div *ngIf="errorMessage">
+                                                            <div class="alert alert-danger" role="alert">
+                                                              {{errorMessage}}
+                                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-1"></div>
+                                 </div>
+                                 <form [formGroup]="loginForm" class="login-container" (ngSubmit)="onSubmit()">
+                                    <div class="row">
+                                        <div class="col-sm-1"></div>
+                                        <div class="col-sm-10">
+                                                
+                                                        <mat-form-field appearance="outline">
+        
+                                                          <mat-label>Username</mat-label>
+                                                          <input matInput placeholder="Placeholder"  formControlName="email" type="text" required>
+                                                          <i class="icon-user"  matSuffix></i>
+                                                    
+                                                        
+                                                        </mat-form-field>
+                                                  
+                                                        <mat-form-field appearance="outline">
+                                                                
+                                                          <mat-label>Password</mat-label>
+                                                          <input matInput placeholder="Placeholder"  type="password" placeholder="Password" formControlName="password"  required>
+                                                          <i class="icon-key"  matSuffix></i>
+                                                      
+                                                       
+                                                        </mat-form-field>
+
+                                                        <button mat-raised-button type="submit" color="primary">Login</button>
+
+                                                  
+                                        </div>
+                                        <div class="col-sm-2"></div>
+                                    </div>
+
+                                </form>
+                                
+                                </mat-card-content>
+                                <mat-card-actions>
+                                </mat-card-actions>
+                                </mat-card>
+            </div>
+        </div>
+        </div>
+        <div class="col-sm-4"></div>
+</div>
+</div>

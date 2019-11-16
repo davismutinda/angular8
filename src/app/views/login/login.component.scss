@@ -1,0 +1,30 @@
+.login-card{
+    margin-top: 160px;
+    width: 100%;
+    // margin: auto;
+    }
+    mat-form-field,button{
+        width: 100%; 
+    }
+    h3{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+       
+    }
+    h2 i {
+        font-size: 80px;
+        
+    }
+    .login{
+        background-color:#1A3A6F;
+        border-radius: 50%;
+        border: 1x solid red;
+        color: white;
+        padding:10px;
+       }
+ .container-fluid{
+     background-color:#EFEEEE;
+     height: 100%;
+ }
